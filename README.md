@@ -1,12 +1,72 @@
-# React + Vite
+# CV Web - Eduardo Duarte
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Currículum web personal construido con React, Vite y Tailwind CSS. Desplegado en GitHub Pages.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías
 
-## Expanding the ESLint configuration
+- **React 19** - Framework UI
+- **Vite** - Build tool rápido
+- **Tailwind CSS** - Estilos utilitarios
+- **Motion** - Animaciones
+- **React Router** - Navegación
+- **GitHub Pages** - Hosting
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Demo
+
+👉 https://eduarp.github.io/cv-web
+
+---
+
+## Desarrollo local
+
+```bash
+# Instalar dependencias
+npm install
+
+# Servidor de desarrollo
+npm run dev
+
+# Build para producción
+npm run build
+
+# Desplegar a GitHub Pages
+npm run deploy
+```
+
+---
+
+## Estructura
+
+```
+cv-web/
+├── src/
+│   ├── App.jsx          # Componente principal
+│   ├── main.jsx         # Entry point
+│   ├── index.css        # Estilos globales
+│   ├── components/      # Componentes reutilizables
+│   └── assets/          # Imágenes y recursos
+├── public/              # Archivos estáticos
+└── package.json
+```
+
+---
+
+## Personalización
+
+Para usar como template para tu propio CV:
+
+1. Fork del repositorio
+2. Editar contenido en `src/components/`
+3. Actualizar datos personales
+4. Configurar `homepage` en `package.json` con tu URL
+5. Ejecutar `npm run deploy`
+
+---
+
+## Licencia
+
+MIT
