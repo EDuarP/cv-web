@@ -182,3 +182,115 @@ body {
   bottom: 0px;
   padding-top: 100px;
 }
+
+@media (max-width: 1200px) {
+  .profile-img {
+    width: 520px;
+    height: 520px;
+  }
+
+  .hero {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .home {
+    padding: 40px 24px;
+    max-width: 100%;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 28px;
+  }
+
+  .hero-right {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .profile-img {
+    width: min(78vw, 420px);
+    height: min(78vw, 420px);
+  }
+
+  .hero-right h1 {
+    font-size: 2rem;
+  }
+
+  .role {
+    font-size: 1.2rem;
+  }
+
+  .bio {
+    font-size: 1.05rem;
+  }
+
+  .cta,
+  .social {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .certificados {
+    position: static;
+    padding-top: 40px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .home {
+    padding: 28px 16px;
+  }
+
+  .profile-img {
+    width: min(84vw, 320px);
+    height: min(84vw, 320px);
+  }
+
+  .hero-right h1 {
+    font-size: 1.7rem;
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .bio {
+    font-size: 0.98rem;
+    line-height: 1.5;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cta {
+    flex-direction: column;
+  }
+
+  .logo_red,
+  .logo_mail {
+    width: 42px;
+    height: 42px;
+  }
+
+  .logo_linkedin {
+    width: 46px;
+    height: 46px;
+  }
+
+  .home .circulo,
+  .home .circulo2,
+  .home .circulo3,
+  .home .circulo4 {
+    opacity: 0.35;
+    transform: scale(0.7);
+  }
+}
