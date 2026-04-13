@@ -100,6 +100,8 @@ body {
   font-weight: bold;
   text-decoration: none;
   transition: all 0.3s ease;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .btn.primary {
@@ -276,10 +278,12 @@ body {
   .btn {
     width: 100%;
     text-align: center;
+    display: block;
   }
 
   .cta {
     flex-direction: column;
+    width: 100%;
   }
 
   .logo_red,
