@@ -52,30 +52,37 @@ export default function Home() {
           />
         </div>
         <div className="hero-right">
-          <h1>Hola, soy <span>Eduardo Duarte</span></h1>
-          <p className="role">Ingeniero Mecatrónico | Data Enthusiast</p>
+          <h1>Hi, I'm <span>Eduardo Duarte</span></h1>
+          <p className="role">Machine Learning Engineer | RF Systems | Data Science</p>
           <p className="bio">
-            Soy un Ingeniero mecatrónico especializado en <strong>soluciones tecnológicas</strong> con experiencia en <strong>automatización</strong>, <strong>análisis avanzado de datos y optimización de procesos</strong>. Actualmente enfocado en el desarrollo de <strong>software</strong>, integrando soluciones inteligentes que conectan <strong>datos, tecnología y eficiencia operativa.</strong>
+            Mechatronics Engineer specialized in building intelligent systems that bridge hardware and software. 
+            Currently focused on <strong>distributed drone detection</strong> using RF signal processing and machine learning. 
+            Experienced in end-to-end development: from data acquisition and signal processing to backend APIs and real-time visualization.
           </p>
-          <p>Aquí encontrarás mi Hoja de Vida y una sección de algunos Proyectos en los que he trabajado.</p>
+          <p>Here you'll find my CV and some projects I've worked on.</p>
           <div className="cta">
-            <Link to="/cv" className="btn primary">Ver CV</Link>
-            <Link to="/projects" className="btn secondary" viewTransition>Proyectos</Link>
+            <Link to="/cv" className="btn primary">View CV</Link>
+            <Link to="/projects" className="btn secondary" viewTransition>Projects</Link>
           </div>
 
           <div className="social">
-            <a href="mailto:eduardo.jose881@gmail.com?subject=Consulta">
+            <a href="mailto:eduardo.jose881@gmail.com?subject=Contact">
                 <img 
                 src={logo_mail} 
-                className="logo_mail" />
+                className="logo_mail" 
+                alt="Email" />
             </a>
-            <a href="https://www.linkedin.com/in/eduardo-duarte-penna/"><img 
+            <a href="https://www.linkedin.com/in/eduardo-duarte-penna/">
+                <img 
                 src={logo_linkedin} 
-                className="logo_linkedin" />
+                className="logo_linkedin"
+                alt="LinkedIn" />
             </a>
-            <a href="https://github.com/EDuarP"><img 
+            <a href="https://github.com/EDuarP">
+                <img 
                 src={logo_github} 
-                className="logo_red" />
+                className="logo_red"
+                alt="GitHub" />
             </a>
           </div>
         </div>
@@ -101,7 +108,7 @@ export default function Home() {
       initial={{ opacity: 0.4 }}   
       animate={{ opacity: 0.4 }}   
       exit={{ opacity: 0}}/>
-      <h1 className="text-4xl font-bold text-gray-800 mb-6 certificados">Certificados ↓</h1>
+      <h1 className="text-4xl font-bold text-gray-800 mb-6 certificados">Certificates ↓</h1>
     </main>
     
     <div className="w-full max-w-7xl mx-auto px-4 py-8">

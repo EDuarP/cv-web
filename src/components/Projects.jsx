@@ -1,5 +1,8 @@
 import React from "react";
 import Cardproject from "./cardproject";
+import morpheus1 from "../assets/proyectos/morpheus1.jpg";
+import morpheus2 from "../assets/proyectos/morpheus2.jpg";
+import morpheus3 from "../assets/proyectos/morpheus3.jpg";
 import ciencia1 from "../assets/proyectos/ciencia1.png";
 import ciencia2 from "../assets/proyectos/ciencia2.png";
 import ciencia3 from "../assets/proyectos/ciencia3.png";
@@ -17,6 +20,7 @@ import Navbar from "./navbar";
 import circulo from "../assets/Ellipse 2.svg";
 import { motion } from "motion/react";
 
+const imagesMorpheus = [morpheus1, morpheus2, morpheus3];
 const images1 = [rpa1, rpa2, rpa3];
 const images2 = [ciencia2, ciencia3, ciencia1];
 const images3 = [venta1, venta2, venta3];
@@ -32,26 +36,33 @@ export default function Projects() {
         animate={{ y: 0 }}
         exit={{ y: -20 }}
         transition={{ duration: 0.5 }}>
-      <h1>Proyectos</h1>
+      <h1>Projects</h1>
       <div className="bg-white/20 backdrop-blur-md border-white/30 rounded-2xl shadow-lg p-10 max-w-6xl mx-auto">
+      
       <Cardproject 
-        Title={"Sistema de gestión para una planta de sacrifico porcina"} 
-        Description={"Este proyecto es un sistema de gestión integral para optimizar el control del flujo de cerdos destinados al sacrificio. Registra de forma automática el peso en distintas etapas, almacena la información en una base centralizada y genera reportes PDF para análisis. Incluye notificaciones vía WhatsApp API y manillas impresas con BarTender, garantizando trazabilidad y acceso inmediato a datos de cada lote. Con estas funciones, el sistema mejora la eficiencia, agiliza decisiones estratégicas y aporta a la digitalización del sector agroindustrial."} 
-        Tools={"Python, Tkinter Designer, Pandas, CSV, Raspberry Pi 4, Figma, WhatsApp API, SMB de Windows"} 
+        Title={"MORPHEUS - Distributed Drone Detection System"} 
+        Description={"Real-time drone detection and triangulation system using RF signals. The project implements a distributed architecture with multiple nodes (Raspberry Pi + SDR) for signal acquisition, ML-based classification on spectrograms, DOA estimation with MVDR beamforming, and geographic triangulation. Features a FastAPI backend, React frontend, and MQTT for node coordination. Currently deployed and operational."} 
+        Tools={"Python, PyTorch, FastAPI, React, MQTT, bladeRF, Raspberry Pi, Azure ML"} 
+        Images={imagesMorpheus}> 
+      </Cardproject>
+
+      <Cardproject 
+        Title={"Pig Weighing Management System"} 
+        Description={"Integral management system for pig processing plants. Automatically records weight at different stages, stores data in a centralized database, and generates PDF reports. Includes WhatsApp API notifications and BarTender integration for printing identification bracelets. Improves efficiency and enables strategic decision-making."} 
+        Tools={"Python, Tkinter Designer, Pandas, CSV, Raspberry Pi 4, Figma, WhatsApp API, SMB"} 
         Images={images4}> 
       </Cardproject>
 
       <Cardproject 
-        Title={"Single Page App para gestión de ventas con comisiones"} 
-        Description={"Este proyecto es una Single Page Application creada para una prueba técnica usando por primera vez Bootstrap y FastAPI. Permite registrar ventas en CSV, integrarlas en una base de datos MySQL normalizada y generar reportes PDF individuales y de equipo. También incluye un dashboard en Power BI para centralizar la información y facilitar el análisis. Un valor agregado es el cálculo automático de comisiones con reglas de bonos y penalizaciones, asegurando transparencia. En conjunto, integra front-end, back-end, base de datos y visualización en un flujo de trabajo eficiente."} 
-        Tools={"Bootstrap, FastAPI, MySQL, Power BI, CSV, Reportes PDF"} 
+        Title={"Sales Management SPA with Commissions"} 
+        Description={"Single Page Application for a technical test using Bootstrap and FastAPI. Records sales in CSV, integrates them into a normalized MySQL database, and generates individual and team PDF reports. Includes Power BI dashboard for centralized visualization. Automatic commission calculation with bonus and penalty rules."} 
+        Tools={"Bootstrap, FastAPI, MySQL, Power BI, CSV, PDF Reports"} 
         Images={images3}> 
       </Cardproject>
 
+      <Cardproject Title={"Task & Role Assignment App in Power Apps"} Description={"Application that facilitates monthly work assignments, calculating work weeks with a single button. Designed for a company with different areas sharing rotating staff. Users can visualize where people are assigned and request reassignment via email through an integrated Power Automate flow."} Tools={"Power Apps, Power Automate, SharePoint"} Images={images1}> </Cardproject>
 
-      <Cardproject Title={"Aplicacion de asignación de tareas/roles en Power Apps"} Description={"En este proyecto, desarrollé una aplicación que facilita las asignaciones de trabajo mensuales, calculando las semanas laborales con un solo botón. Está diseñada para una empresa con diferentes áreas que comparten el mismo personal rotativo. Con esta aplicación, se puede visualizar en qué áreas están asignadas las personas y permite solicitar su reasignación a otra área mediante correo electrónico, gracias a un flujo de Power Automate integrado en la app."} Tools={"Power Apps, Power Automate y SharePoint"} Images={images1}> </Cardproject>
-
-      <Cardproject Title={"Ciencia de Datos en el Transporte Público"} Description={"En una investigación en la que apliqué la metodología de ciencia de datos (Business Understanding, Data Understanding, Data Preparation, Modeling y Evaluation) para analizar y modelar rutas del transporte público del Área Metropolitana de Bucaramanga (AMB), descubrí que la mejor técnica de aprendizaje automático para aplicar en estas rutas es KNeighborsRegressor."} Tools={"Python, Power BI y Machine Learning."} Images={images2}> </Cardproject>
+      <Cardproject Title={"Data Science in Public Transportation"} Description={"Applied the data science methodology (Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation) to analyze and model public transportation routes in Bucaramanga. Discovered that KNeighborsRegressor was the best ML technique for route prediction."} Tools={"Python, Power BI, Machine Learning"} Images={images2}> </Cardproject>
       </div>
         </motion.div>
       <motion.img src={circulo} alt="circulo" className="circulo"  layoutId="circulo1" transition={{ duration: 0.6, ease: "easeInOut" }}
