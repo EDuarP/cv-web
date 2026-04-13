@@ -1,7 +1,7 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/home.jsx";
 import Cv from "./components/cv.jsx";
-import Projects from "./components/projects.jsx";
+import Projects from "./components/Projects.jsx";
 import { AnimatePresence, LayoutGroup } from "framer-motion";
 
 function App() {

@@ -8,7 +8,7 @@ import powerapps from "../assets/powerapp.png";
 import powerautomate from "../assets/power-automate.png";
 import visualstudio from "../assets/visual-studio.png";
 import iconreact from "../assets/react.svg";
-import fastapi from "../assets/fastapi-seek-logo.png";
+import fastapi from "../assets/fastapi-seeklogo.png";
 import circulo from "../assets/Ellipse 2.svg";
 import { motion } from "motion/react";
 

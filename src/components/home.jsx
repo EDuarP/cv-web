@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./home.css";
 import pp from "../assets/pp.jpg";
 import logo_linkedin from "../assets/linkedin-logo.svg";
 import logo_github from "../assets/github-logo.svg";
