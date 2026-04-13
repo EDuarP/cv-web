@@ -16,8 +16,9 @@ body {
 .home {
   padding: 60px 50px 20px;
   display: block;
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: none;
+  margin: 0;
   position: relative;
   overflow: hidden;
 }
@@ -25,9 +26,11 @@ body {
 .hero {
   display: flex;
   align-items: center;
+  justify-content: center;
   max-width: 1800px;
+  margin: 0 auto;
   gap: 60px;
-  flex-wrap: wrap; /* para responsive */
+  flex-wrap: wrap;
 }
 
 /* Foto */
