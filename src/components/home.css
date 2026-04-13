@@ -177,11 +177,16 @@ body {
   z-index: -1;
 }
 
+.certificates-section {
+  position: relative;
+  z-index: 2;
+}
+
 .certificados{
   position: static;
   display: block;
   width: 100%;
-  margin: 32px 0 0;
+  margin: 12px 0 24px;
   text-align: center;
 }
 

@@ -108,11 +108,10 @@ export default function Home() {
       initial={{ opacity: 0.4 }}   
       animate={{ opacity: 0.4 }}   
       exit={{ opacity: 0}}/>
-      <h1 className="text-4xl font-bold text-gray-800 mb-6 certificados">Certificates ↓</h1>
     </main>
     
-    <div className="w-full max-w-7xl mx-auto px-4 py-8">
-      {/* Header */}
+    <div className="w-full max-w-7xl mx-auto px-4 py-8 certificates-section">
+      <h1 className="text-4xl font-bold text-gray-800 mb-6 certificados">Certificates ↓</h1>
       <div className="mb-8">
         <Carousel images={images} />
       </div>
