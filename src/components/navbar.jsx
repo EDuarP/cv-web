@@ -8,7 +8,7 @@ export default function Navbar() {
       <ul className="nav-links">
         <li><Link to="/home">Home</Link></li>
         <li><Link to="/cv">CV</Link></li>
-        <li><Link to="/projects">Proyectos</Link></li>
+        <li><Link to="/projects">Projects</Link></li>
       </ul>
     </nav>
   );

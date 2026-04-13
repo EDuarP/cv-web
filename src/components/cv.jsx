@@ -34,7 +34,7 @@ export default function Cv() {
                 download="CV_Eduardo_Duarte.pdf"
                 className="btn primary"
                 >
-                Descargar CV
+                Download CV
             </a>
 
             <div className="social">
@@ -56,13 +56,13 @@ export default function Cv() {
             transition={{ duration: 0.5 }}>
         <div className="cv">
         <div className="content">
-            <h2>Educación</h2>
+            <h2>Education</h2>
             <ul>
                 <li><strong>Universidad Santo Tomás, Colombia</strong> – B.Sc. in Mechatronics Engineering (2019–2025)</li>
                 <li><strong>Coursera – Google Data Analytics Specialization</strong> (2023)</li>
             </ul>
 
-            <h2>Experiencia Profesional</h2>
+            <h2>Professional Experience</h2>
 
             <h3>Space-Eyes — Machine Learning Engineer</h3>
             <p className="date">Oct 2025 – Present</p>
